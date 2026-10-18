@@ -1,0 +1,12 @@
+name: hello
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: who is running this?
+        run: |
+        echo "Hello from the runner"
+        whomai
+        uname -sr
